@@ -12,13 +12,14 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background-color: var(--secondary);
+  background: rgb(0,205,189);
+background: linear-gradient(45deg, rgba(0,205,189,1) 0%, rgba(198,251,193,1) 100%);
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
   width: 100px;
   cursor: pointer;
-  box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
+  box-shadow: 0px 2px 0px -2px rgba(250, 250, 250, 0.3);
   -webkit-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   -moz-box-shadow: 0px 6px 0px -2px rgba(250, 250, 250, 0.3);
   :active {
@@ -32,7 +33,7 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary);
+  background-color: var(--primary2);
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -75,10 +76,12 @@ export const StyledLogo = styled.img`
 `;
 
 export const StyledImg = styled.img`
-  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
+  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border: 1px solid var(--primary2);
   background-color: var(--accent);
-  border-radius: 100%;
+
+  transform: rotate(-5deg);
   width: 200px;
   @media (min-width: 900px) {
     width: 250px;
@@ -198,14 +201,16 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+
+        style={{backgroundColor: "var(--primary2)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        <StyledLogo alt={"logo"} src={"/config/images/logo.gif"} />
         <s.SpacerSmall />
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            <StyledImg alt={"example"} src={"/config/images/sd_l.gif"} />
           </s.Container>
           <s.SpacerLarge />
           <s.Container
@@ -213,11 +218,14 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundColor: "var(--accent2)",
               padding: 24,
-              borderRadius: 24,
-              border: "4px dashed var(--secondary)",
-              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
+              borderRadius: 8,
+              
+              border: "1px solid var(--primary2)",
+              boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.1)",
+
+              
             }}
           >
             <s.TextTitle
@@ -321,7 +329,7 @@ function App() {
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
-                        style={{ lineHeight: 0.4 }}
+                        style={{ lineHeight: 0.1 }}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -373,8 +381,8 @@ function App() {
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg
               alt={"example"}
-              src={"/config/images/example.gif"}
-              style={{ transform: "scaleX(-1)" }}
+              src={"/config/images/sd_r.gif"}
+              style={{ transform: "scaleX(1)",transform: "rotate(5deg)" }}
             />
           </s.Container>
         </ResponsiveWrapper>
