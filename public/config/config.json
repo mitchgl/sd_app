@@ -1,16 +1,16 @@
 {
-  "CONTRACT_ADDRESS": "0x57E4cfCe6373D0365f30D8CAc67A92E12B582D4a",
-  "SCAN_LINK": "https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192",
+  "CONTRACT_ADDRESS": "0xbfEC2Ef7B6D41F07aDd30B26D3E9424289e7122A",
+  "SCAN_LINK": "https://polygonscan.com/address/0xbfec2ef7b6d41f07add30b26d3e9424289e7122a",
   "NETWORK": {
-    "NAME": "Ethereum",
-    "SYMBOL": "ETH",
-    "ID": 1
+    "NAME": "Polygon",
+    "SYMBOL": "MATIC",
+    "ID": 137
   },
   "NFT_NAME": "Silly Dogs",
   "SYMBOL": "SD",
   "MAX_SUPPLY": 10000,
-  "WEI_COST": 75000000000000000,
-  "DISPLAY_COST": 0.02,
+  "WEI_COST": 30000000000000000000,
+  "DISPLAY_COST": 30,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opeansea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/sillydogs",
