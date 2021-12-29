@@ -33,7 +33,6 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: var(--primary2);
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -142,13 +141,13 @@ function App() {
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("Sorry, something went wrong please try again later.");
+        setFeedback("Sorry, something went wrong please try again.");
         setClaimingNft(false);
       })
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `WOW, the ${CONFIG.NFT_NAME} is yours! go visit Opensea.io to view it.`
+          `You have your very own ${CONFIG.NFT_NAME} NFT! go visit Opensea.io to view it.`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -202,7 +201,7 @@ function App() {
         flex={1}
         ai={"center"}
 
-        style={{backgroundColor: "var(--primary2)" }}
+        style={{backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
 
       >
