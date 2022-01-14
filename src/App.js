@@ -414,54 +414,6 @@ function App() {
         </s.Container>
       </s.Container>
 
-
-    
-    {/* bookmark content#1 */}
-      {/*   <s.Container  flex={1} jc={"center"} ai={"center"} style={{ width: "70%", backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}>
-          <s.TextDescription
-            style={{
-              textAlign: "left",
-              paddingTop: "90px",
-              paddingBottom: "90px",
-              paddingLeft: "32px",
-     
-              color: "var(--primary-text)",
-            }}
-          >
-
-            <s.Container>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec feugiat ligula. In hac habitasse platea dictumst. Suspendisse potenti. Proin hendrerit nibh sed facilisis finibus. Vivamus vitae nisl vitae lacus rutrum aliquam. Curabitur lobortis orci eu sem finibus tempus viverra id massa. Duis leo massa, varius ac rhoncus eget, tempor et erat. Vivamus non urna non mauris condimentum bibendum. Maecenas tempor, mauris sed tincidunt sollicitudin, turpis sem efficitur quam, nec euismod augue dolor ac dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta eros id volutpat dapibus. Aliquam volutpat mi at leo fermentum, non molestie est tincidunt. Nulla et vehicula mauris. Proin lacus ipsum, placerat sit amet pulvinar et, commodo at orci. In hac habitasse platea dictumst. Vivamus scelerisque quam a magna dictum laoreet.
-           </s.Container>
-           <s.SpacerLarge/>
-Aenean rutrum, enim vel vestibulum porttitor, sapien neque auctor lacus, eleifend maximus orci augue in felis. Quisque sit amet sem porta, venenatis justo eget, consequat quam. Aliquam sit amet tristique arcu. Nunc euismod mattis mauris quis ullamcorper. Donec cursus, dui nec mattis rhoncus, diam nunc aliquet nibh, sit amet fringilla nulla enim ut nisl. Vivamus placerat justo quam, eget faucibus quam venenatis sit amet. Phasellus finibus neque at metus ultricies laoreet. Duis gravida mollis euismod.
-
-Morbi suscipit nisl est, vitae efficitur ligula tempus quis. Nulla facilisi. Mauris egestas sollicitudin nisl, sed scelerisque sapien feugiat vel. Phasellus rutrum augue vel sem vulputate, eu tincidunt risus posuere. Mauris turpis turpis, sagittis non commodo at, imperdiet non lectus. In hendrerit purus a tristique suscipit. Nulla facilisi.
-
-
-          </s.TextDescription>
-
-          <s.TextDescription
-            style={{
-              textAlign: "left",
-              paddingTop: "90px",
-              paddingBottom: "90px",
-           
-              right: "0",
-              color: "var(--primary-text)",
-              maxWidth: "49%"
-            }}
-          >
-            Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
-          </s.TextDescription>
-          <s.SpacerSmall />
-        </s.Container>
-                
-         */}
-      
-
       <s.Container
         flex={1}
         ai={"left"}
