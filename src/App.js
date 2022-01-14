@@ -457,7 +457,8 @@ function App() {
               }}
             >
 
-       
+            <s.SpacerLarge/>
+            <s.SpacerLarge/>
 
               Every dog is special
             </s.TextTitle>
@@ -467,7 +468,17 @@ function App() {
                 lineHeight:"140%"
               }}
             >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec feugiat ligula. In hac habitasse platea dictumst. Suspendisse potenti. Proin hendrerit nibh sed facilisis finibus. Vivamus vitae nisl vitae lacus rutrum aliquam. Curabitur lobortis orci eu sem finibus tempus viverra id massa. Duis leo massa, varius ac rhoncus eget, tempor et erat. Vivamus non urna non mauris condimentum bibendum. 
+           There’s 10,000 Silly Dogs in this run, with every single one being unique and an expression of affection for animals around the world, especially dogs. Ultimately, Silly Dogs aims to leverage non-fungible tokens (NFT’s) to benefit animals in some way. 
+            </s.Container>
+ 
+            <s.SpacerSmall/>
+
+            <s.Container
+              style={{
+                lineHeight:"140%"
+              }}
+            >
+              Each dog has a selection of traits; from faces, hair, hats, and more — Silly Dogs are friends to accompany you through the metaverse. Holding a SillyDog enables you to participate in the community - enabling you to vote on charities, merchandise, and possibly events. The more silly dogs out there, the more help and awareness we can bring. 
             </s.Container>
           <s.SpacerLarge/>
 
@@ -493,7 +504,7 @@ function App() {
                 lineHeight:"140%"
               }}
             >
-            Maecenas tempor, mauris sed tincidunt sollicitudin, turpis sem efficitur quam, nec euismod augue dolor ac dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta eros id volutpat dapibus. Aliquam volutpat mi at leo fermentum, non molestie est tincidunt. Nulla et vehicula mauris. Proin lacus ipsum, placerat sit amet pulvinar et, commodo at orci. In hac habitasse platea dictumst. Vivamus scelerisque quam a magna dictum laoreet.
+            Silly Dogs will be revealed together simultaneously on [date], [time]. There’s 2 different kinds of Silly Dogs to unlock right now, with some special editions. In this initial run, the Silly Dogs will be similar to the ones shown on this page. In future, the aim is to represent even more of our friends on the blockchain.
             </s.Container>
 
             
@@ -515,12 +526,12 @@ function App() {
             
             <s.SpacerLarge/>
 
-            <s.Container flex={1} jc={"center"} ai={"center"} style={{ marginTop:"20px", paddingTop:"10%"}}>
+            {/* <s.Container flex={1} jc={"center"} ai={"center"} style={{ marginTop:"20px", paddingTop:"10%"}}>
             <s.StyledImgV2
               alt={"example"}
               src={"/config/images/dog.jpeg"}
               style={{ transform: "scaleX(1)",transform: "rotate(0deg)" }}
-            ></s.StyledImgV2>
+            ></s.StyledImgV2> */}
 
 
           <s.Container flex={1} jc={"center"} ai={"center"}>
@@ -537,18 +548,27 @@ function App() {
               backgroundColor: "none"
             }}
             />
-          </s.Container>
+          {/* </s.Container> */}
             
         </s.Container>
 
             <s.Container>
             SillyDogs V1 (This launch!)
-            SillyDogs V2
-            SillyDogs V3
-            ETH release
-            NFT's to support Animal Charities
-            Merchandise
             </s.Container>
+            <s.Container>
+            SillyDogs V2
+            </s.Container>
+            <s.Container>
+            SillyDogs V3
+            </s.Container>
+            <s.Container>
+            ETH release
+            </s.Container>
+            <s.Container>
+            NFT's to support Animal Charities
+            </s.Container>
+            Merchandise
+            
 
             
 
@@ -558,12 +578,7 @@ function App() {
 
           </s.Container>
 
-
-
-          
-
-
-          <s.SpacerLarge />
+            {/* middle conainer floating right dog */}
           <s.Container flex={1} jc={"center"} ai={"center"}>
             {/* <StyledImg
               alt={"example"}
@@ -573,23 +588,16 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         </s.Container>
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
-        <s.SpacerLarge />
         
-        {/* bookmark mid container end */}
+        {/* bookmark mid container end footer */}
 
-        <s.Container flex={1} jc={"center"} ai={"center"} style={{ marginTop:"20px", paddingTop:"10%"}}>
-            <StyledImg
-              alt={"example"}
-              src={"/config/images/sd_r.gif"}
-              style={{ transform: "scaleX(1)",transform: "rotate(5deg)" }}
-            />
-        </s.Container>
-
+        
 
         <s.TextTitleFooter
+
+              
+
+
               style={{
                 textAlign: "center",
                 fontSize: 16,
@@ -600,11 +608,17 @@ function App() {
                 padding: "10%",
                
               }}
-            >
+            ><s.Container flex={1} jc={"center"} ai={"center"} style={{ }}>
+            <StyledImg
+              alt={"example"}
+              src={"/config/images/sd_r.gif"}
+              style={{ transform: "scaleX(1)",transform: "rotate(0deg)" }}
+            />
+            <s.SpacerLarge/>
+            <s.SpacerLarge/>
+        </s.Container>
              SillyDogs is a labor of love for animals everywhere ❤️
             </s.TextTitleFooter>
-
- 
 
     </s.Screen>
     

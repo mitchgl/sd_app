@@ -89,11 +89,10 @@ export const StyledClickable = styled.div`
 `;
 
 
-export const StyledImgV2 = styled.div`
-  border-radius:8px red;
-  width: 500px;
-  height: 500px;
-  display: block;
-  background-color: green;
-  background-image: url("/public/config/images/dog.jpeg");
-`;
+// export const StyledImgV2 = styled.div`
+//   border-radius:8px red;
+//   width: 500px;
+//   height: 500px;
+//   display: block;
+//   background-color: green;
+// `;
