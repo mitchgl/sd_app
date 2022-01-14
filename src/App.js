@@ -419,7 +419,7 @@ function App() {
         ai={"left"}
 
         style={{backgroundColor: "var(--primary)" }}
-        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bgsvg.svg" : null}
 
       >
         
@@ -480,7 +480,7 @@ function App() {
                 fontWeight: "bold",
                 // color: "white",
                 width:"100%",
-                lineHeight:"110%"
+                lineHeight:"140%"
               }}
             >
             The big reveal
@@ -488,7 +488,11 @@ function App() {
             
             <s.SpacerLarge/>
 
-            <s.Container>
+            <s.Container
+              style={{
+                lineHeight:"140%"
+              }}
+            >
             Maecenas tempor, mauris sed tincidunt sollicitudin, turpis sem efficitur quam, nec euismod augue dolor ac dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta eros id volutpat dapibus. Aliquam volutpat mi at leo fermentum, non molestie est tincidunt. Nulla et vehicula mauris. Proin lacus ipsum, placerat sit amet pulvinar et, commodo at orci. In hac habitasse platea dictumst. Vivamus scelerisque quam a magna dictum laoreet.
             </s.Container>
 
