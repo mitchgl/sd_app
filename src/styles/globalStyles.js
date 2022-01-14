@@ -54,7 +54,20 @@ export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 22px;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 140%;
+`;
+
+export const TextTitleFooter = styled.p`
+  color: var(--primary-text);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  background-color: black;
+  line-height: 140%;
+  color: white;
+  padding: 10%;
+  width:100%;
+  padding: 10%;
 `;
 
 export const TextSubTitle = styled.p`
@@ -73,4 +86,14 @@ export const StyledClickable = styled.div`
   :active {
     opacity: 0.6;
   }
+`;
+
+
+export const StyledImgV2 = styled.div`
+  border-radius:8px red;
+  width: 500px;
+  height: 500px;
+  display: block;
+  background-color: green;
+  background-image: url("/public/config/images/dog.jpeg");
 `;

@@ -4,6 +4,7 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import reactDom from "react-dom";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -13,7 +14,7 @@ export const StyledButton = styled.button`
   border-radius: 50px;
   border: none;
   background: rgb(0,205,189);
-background: linear-gradient(45deg, rgba(0,205,189,1) 0%, rgba(198,251,193,1) 100%);
+  background: linear-gradient(45deg, rgba(0,205,189,1) 0%, rgba(198,251,193,1) 100%);
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
@@ -408,9 +409,249 @@ function App() {
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
           </s.TextDescription>
+          <s.SpacerLarge />
+          <s.SpacerLarge />
         </s.Container>
       </s.Container>
+
+
+    
+    {/* bookmark content#1 */}
+      {/*   <s.Container  flex={1} jc={"center"} ai={"center"} style={{ width: "70%", backgroundColor: "var(--primary)" }}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}>
+          <s.TextDescription
+            style={{
+              textAlign: "left",
+              paddingTop: "90px",
+              paddingBottom: "90px",
+              paddingLeft: "32px",
+     
+              color: "var(--primary-text)",
+            }}
+          >
+
+            <s.Container>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec feugiat ligula. In hac habitasse platea dictumst. Suspendisse potenti. Proin hendrerit nibh sed facilisis finibus. Vivamus vitae nisl vitae lacus rutrum aliquam. Curabitur lobortis orci eu sem finibus tempus viverra id massa. Duis leo massa, varius ac rhoncus eget, tempor et erat. Vivamus non urna non mauris condimentum bibendum. Maecenas tempor, mauris sed tincidunt sollicitudin, turpis sem efficitur quam, nec euismod augue dolor ac dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta eros id volutpat dapibus. Aliquam volutpat mi at leo fermentum, non molestie est tincidunt. Nulla et vehicula mauris. Proin lacus ipsum, placerat sit amet pulvinar et, commodo at orci. In hac habitasse platea dictumst. Vivamus scelerisque quam a magna dictum laoreet.
+           </s.Container>
+           <s.SpacerLarge/>
+Aenean rutrum, enim vel vestibulum porttitor, sapien neque auctor lacus, eleifend maximus orci augue in felis. Quisque sit amet sem porta, venenatis justo eget, consequat quam. Aliquam sit amet tristique arcu. Nunc euismod mattis mauris quis ullamcorper. Donec cursus, dui nec mattis rhoncus, diam nunc aliquet nibh, sit amet fringilla nulla enim ut nisl. Vivamus placerat justo quam, eget faucibus quam venenatis sit amet. Phasellus finibus neque at metus ultricies laoreet. Duis gravida mollis euismod.
+
+Morbi suscipit nisl est, vitae efficitur ligula tempus quis. Nulla facilisi. Mauris egestas sollicitudin nisl, sed scelerisque sapien feugiat vel. Phasellus rutrum augue vel sem vulputate, eu tincidunt risus posuere. Mauris turpis turpis, sagittis non commodo at, imperdiet non lectus. In hendrerit purus a tristique suscipit. Nulla facilisi.
+
+
+          </s.TextDescription>
+
+          <s.TextDescription
+            style={{
+              textAlign: "left",
+              paddingTop: "90px",
+              paddingBottom: "90px",
+           
+              right: "0",
+              color: "var(--primary-text)",
+              maxWidth: "49%"
+            }}
+          >
+            Please make sure you are connected to the right network (
+            {CONFIG.NETWORK.NAME} Mainnet) and the correct address. Please note:
+            Once you make the purchase, you cannot undo this action.
+          </s.TextDescription>
+          <s.SpacerSmall />
+        </s.Container>
+                
+         */}
+      
+
+      <s.Container
+        flex={1}
+        ai={"left"}
+
+        style={{backgroundColor: "var(--primary)" }}
+        image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+
+      >
+        
+        <s.SpacerSmall />
+
+
+        <ResponsiveWrapper flex={2} style={{ padding: 24 }} test>
+          <s.Container flex={1} jc={"left"} ai={"left"}>
+            
+          </s.Container>
+          <s.SpacerLarge />
+          
+
+
+          <s.Container
+            flex={1}
+            jc={"left"}
+            ai={"left"}
+            style={{
+              // backgroundColor: "var(--accent2)",
+              // padding: 24,
+              // borderRadius: 8,
+              // border: "1px solid var(--primary2)",
+              // boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.1)",
+            }}
+          >
+            <s.TextTitle
+              style={{
+                textAlign: "left",
+                fontSize: 50,
+                fontWeight: "bold",
+                // color: "white",
+                width:"100%",
+                lineHeight:"110%"
+              }}
+            >
+
+       
+
+              Every dog is special
+            </s.TextTitle>
+          <s.SpacerLarge/>
+            <s.Container
+              style={{
+                lineHeight:"140%"
+              }}
+            >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec feugiat ligula. In hac habitasse platea dictumst. Suspendisse potenti. Proin hendrerit nibh sed facilisis finibus. Vivamus vitae nisl vitae lacus rutrum aliquam. Curabitur lobortis orci eu sem finibus tempus viverra id massa. Duis leo massa, varius ac rhoncus eget, tempor et erat. Vivamus non urna non mauris condimentum bibendum. 
+            </s.Container>
+          <s.SpacerLarge/>
+
+          <s.SpacerLarge/>
+          
+          <s.TextTitle
+              style={{
+                textAlign: "left",
+                fontSize: 50,
+                fontWeight: "bold",
+                // color: "white",
+                width:"100%",
+                lineHeight:"110%"
+              }}
+            >
+            The big reveal
+            </s.TextTitle>
+            
+            <s.SpacerLarge/>
+
+            <s.Container>
+            Maecenas tempor, mauris sed tincidunt sollicitudin, turpis sem efficitur quam, nec euismod augue dolor ac dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porta eros id volutpat dapibus. Aliquam volutpat mi at leo fermentum, non molestie est tincidunt. Nulla et vehicula mauris. Proin lacus ipsum, placerat sit amet pulvinar et, commodo at orci. In hac habitasse platea dictumst. Vivamus scelerisque quam a magna dictum laoreet.
+            </s.Container>
+
+            
+            <s.SpacerLarge/>
+            <s.SpacerLarge/>
+          
+          <s.TextTitle
+              style={{
+                textAlign: "left",
+                fontSize: 50,
+                fontWeight: "bold",
+                // color: "white",
+                width:"100%",
+                lineHeight:"110%"
+              }}
+            >
+            Roadmap
+            </s.TextTitle>
+            
+            <s.SpacerLarge/>
+
+            <s.Container flex={1} jc={"center"} ai={"center"} style={{ marginTop:"20px", paddingTop:"10%"}}>
+            <s.StyledImgV2
+              alt={"example"}
+              src={"/config/images/dog.jpeg"}
+              style={{ transform: "scaleX(1)",transform: "rotate(0deg)" }}
+            ></s.StyledImgV2>
+
+
+          <s.Container flex={1} jc={"center"} ai={"center"}>
+            <StyledImg alt={"example"} src={"/config/images/bgsvg.svg"} 
+              style={{
+              textAlign: "left",
+              fontSize: 50,
+              fontWeight: "bold",
+              // color: "white",
+              width:"100%",
+              lineHeight:"110%",
+              borderColor: "none",
+              transform: "rotate(0deg)",
+              backgroundColor: "none"
+            }}
+            />
+          </s.Container>
+            
+        </s.Container>
+
+            <s.Container>
+            SillyDogs V1 (This launch!)
+            SillyDogs V2
+            SillyDogs V3
+            ETH release
+            NFT's to support Animal Charities
+            Merchandise
+            </s.Container>
+
+            
+
+            <s.SpacerLarge/>
+            <s.SpacerLarge/>
+            <s.SpacerLarge/>
+
+          </s.Container>
+
+
+
+          
+
+
+          <s.SpacerLarge />
+          <s.Container flex={1} jc={"center"} ai={"center"}>
+            {/* <StyledImg
+              alt={"example"}
+              src={"/config/images/sd_r.gif"}
+              style={{ transform: "scaleX(1)",transform: "rotate(5deg)" }}
+            /> */}
+          </s.Container>
+        </ResponsiveWrapper>
+        </s.Container>
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        <s.SpacerLarge />
+        
+        {/* bookmark mid container end */}
+
+        <s.Container flex={1} jc={"center"} ai={"center"} style={{ marginTop:"20px", paddingTop:"10%"}}>
+            <StyledImg
+              alt={"example"}
+              src={"/config/images/sd_r.gif"}
+              style={{ transform: "scaleX(1)",transform: "rotate(5deg)" }}
+            />
+        </s.Container>
+
+
+        <s.TextTitleFooter
+              style={{
+                textAlign: "center",
+                fontSize: 16,
+                fontWeight: "bold",
+                // color: "white",
+                width:"100%",
+                lineHeight:"110%",
+                padding: "10%",
+               
+              }}
+            >
+             SillyDogs is a labor of love for animals everywhere ❤️
+            </s.TextTitleFooter>
+
+ 
+
     </s.Screen>
+    
   );
 }
 
