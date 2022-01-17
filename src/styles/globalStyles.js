@@ -10,6 +10,8 @@ export const Screen = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  
 `;
 
 // Used for providing space between components
@@ -88,11 +90,10 @@ export const StyledClickable = styled.div`
   }
 `;
 
+export const TextDivider = styled.div`
+  height: 6px;
+  width: 80px;
+  display: block;
+  background-color: white;
+`;
 
-// export const StyledImgV2 = styled.div`
-//   border-radius:8px red;
-//   width: 500px;
-//   height: 500px;
-//   display: block;
-//   background-color: green;
-// `;
