@@ -97,14 +97,15 @@ export const StyledImg = styled.img`
 
 
 export const StyledImg02 = styled.img`
-  width: 200px;
+  width: 220px;
+
   @media (min-width: 900px) {
-    width: 250px;
+    width: 220px;
   }
   @media (min-width: 1000px) {
-    width: 300px;
+    width: 220px;
   }
-  transition: width 0.5s;
+  transition: 0.5s;
 `;
 
 // link containers
@@ -269,7 +270,7 @@ function App() {
 
         <StyledLogo alt={"logo"} src={"/config/images/logowhite.gif"} />
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 24 }} >
           <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg02 alt={"example"} src={"/config/images/sd_l_.gif"} />
           </s.Container>
@@ -506,11 +507,6 @@ function App() {
             jc={"left"}
             ai={"left"}
             style={{
-              // backgroundColor: "var(--accent2)",
-              // padding: 24,
-              // borderRadius: 8,
-              // border: "1px solid var(--primary2)",
-              // boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.1)",
             }}
           >
   
@@ -518,7 +514,7 @@ function App() {
           {/* <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg02
               alt={"example"}
-              src={"/config/images/sd_r.gif"}
+              src={"/config/images/sd_r_.gif"}
               style={{ transform: "scaleX(1)",transform: "rotate(5deg)" }}
             />
           </s.Container> */}
@@ -617,6 +613,7 @@ function App() {
             <s.TextDivider/>
 
             <s.SpacerLarge/>
+            
 
             <s.Container
               style={{
@@ -633,85 +630,71 @@ function App() {
               
           {/* roadmap containers */}
 
-          <s.Container flex={1} jc={"center"} ai={"center"}>
+      
+
+          <s.Container flex={1} flex={1} ai={"center"} style={{ }}>
             <StyledImg02 alt={"example"} src={"/config/images/roadmap1.svg"} 
               style={{
               width:"40%",
-              marginTop: "30px"
+              float: "left"
             }}
-            /></s.Container>
+            />
+      
 
-<s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg02 alt={"example"} src={"/config/images/roadmap2.svg"} 
               style={{
               width:"40%",
+              float: "right",
               marginTop: "30px"
             }}
-            /></s.Container>
+            />
 
-<s.Container flex={1} jc={"center"} ai={"center"}>
+     
             <StyledImg02 alt={"example"} src={"/config/images/roadmap3.svg"} 
               style={{
               width:"40%",
-              marginTop: "30px"
+              marginTop: "30px",
+              float: "left",
             }}
-            /></s.Container>
+            />
 
-<s.Container flex={1} jc={"center"} ai={"center"}>
+
             <StyledImg02 alt={"example"} src={"/config/images/roadmap4.svg"} 
               style={{
               width:"40%",
-              marginTop: "30px"
+              marginTop: "30px",
+              float: "left",
             }}
-            /></s.Container>
+            />
 
-<s.Container flex={1} jc={"center"} ai={"center"}>
+
             <StyledImg02 alt={"example"} src={"/config/images/roadmap5.svg"} 
               style={{
               width:"40%",
-              marginTop: "30px"
+              marginTop: "30px",
+              float: "left",
             }}
-            /></s.Container>
+            />
 
-<s.Container flex={1} jc={"center"} ai={"center"}>
+
             <StyledImg02 alt={"example"} src={"/config/images/roadmap6.svg"} 
               style={{
               width:"40%",
-              marginTop: "30px"
+              marginTop: "30px",
+              float: "left",
             }}
-            /></s.Container>
+            />
+            
+          </s.Container>
 
             <s.SpacerLarge/>
             <s.SpacerLarge/>
             
-            {/* social container start bookmark*/}
-           <ResponsiveWrapper>
            
-            {/* <s.Container flex={1} jc={"center"} ai={"center"} style={{ color: "white", fontSize: "24px", fontWeight:"500" }}>
-            <StyledLink02 href="www.google.com" target="_blank">
-            Telegram
-              <StyledImg03 alt={"example"} src={"/config/images/telegram.svg"} 
-                  style={{
-                }}/> 
-            </s.Container>
-            </StyledLink02> */}
-       
-
-          {/* <s.Container flex={1} jc={"center"} ai={"center"}>
-              <StyledImg03 alt={"example"} src={"/config/images/discord.svg"}/> 
-            Discord
-
-          </s.Container> */}
-
-          
-
-
-          </ResponsiveWrapper>
 
           <s.SpacerLarge/>
           <s.SpacerLarge/>
           <s.SpacerLarge/>
-          {/* social container end bookmark */}
 
           </s.Container>
 
@@ -744,7 +727,8 @@ function App() {
       >
  
 
-       
+       <s.SpacerLarge/>
+       <s.SpacerLarge/>
         <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg02 alt={"example"} src={"/config/images/heart.svg"} 
               style={{
