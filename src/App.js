@@ -592,7 +592,7 @@ function App() {
                 color: "white"
               }}
             >
-            Silly Dogs will be revealed from their current storage on IPFS on [date], 12AM EST. There’s 2 different kinds of Silly Dogs to unlock right now, with some special editions. In this initial run, the Silly Dogs will be similar to the ones shown on this page. In future, one of the goals of Silly Dogs is to represent even more of our friends on the blockchain, in more ways, with improved artwork.
+            Silly Dogs will be revealed from their current storage on IPFS on [date], 12AM EST. There’s 2 different kinds of Silly Dogs to unlock right now, with some special editions. In this initial run, the Silly Dogs will be similar to some designs shown on this page. In future, one of the goals of Silly Dogs is to represent even more of our friends on the blockchain, in more ways, with improved artwork.
             </s.Container>
             
             <s.SpacerLarge/>
