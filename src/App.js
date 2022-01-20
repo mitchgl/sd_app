@@ -141,6 +141,7 @@ export const StyledLink = styled.a`
   text-decoration: none;
   left:0;
   margin-top: 100px;
+  font-size: 12px;
 `;
 
 export const StyledLink02 = styled.a`
@@ -151,6 +152,15 @@ export const StyledLink02 = styled.a`
   width: 150px;
   height: 100px;
   background-color: green;
+`;
+
+export const StyledLink03 = styled.a`
+  color: white;
+  font-size: 12px;
+  weight: 600;
+  text-decoration: none;
+  text-align: center;
+
 `;
 
 
@@ -290,14 +300,14 @@ function App() {
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: "50px",
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
-            <s.TextDescription
+            {/* <s.TextDescription
               style={{
                 textAlign: "center",
                 color: "var(--primary-text)",
@@ -307,7 +317,7 @@ function App() {
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
-            </s.TextDescription>
+            </s.TextDescription> */}
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
@@ -323,7 +333,7 @@ function App() {
                 </s.TextDescription>
                 <s.SpacerSmall />
                 <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                  {CONFIG.MARKETPLACE}
+                  {CONFIG.MARKETPLACE} 
                 </StyledLink>
               </>
             ) : (
@@ -335,11 +345,11 @@ function App() {
                   {CONFIG.NETWORK.SYMBOL}
                 </s.TextTitle>
             
-                <s.TextDescription
+                {/* <s.TextDescription
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   (excluding gas fees)
-                </s.TextDescription>
+                </s.TextDescription> */}
                 <s.SpacerSmall />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
@@ -451,17 +461,16 @@ function App() {
           <s.TextDescription
             style={{
               textAlign: "left",
-              color: "var(--primary-text)",
               color: "white",
-              width: "90%"
+              width: "80%",
+              fontSize: "12px"
             }}
           >
             Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} main net) and the correct address. Please note:
-            Once you make the purchase, you cannot undo this action.
+            {CONFIG.NETWORK.NAME} main net) and the correct address. Minting cannot be undone. 
           </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription
+          {/* <s.TextDescription
             style={{
               textAlign: "left",
               color: "var(--primary-text)",
@@ -472,24 +481,16 @@ function App() {
             We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
             successfully mint your NFT. We recommend that you don't lower the
             gas limit.
-          </s.TextDescription>
-          <s.SpacerLarge />
-          <s.SpacerLarge />
+          </s.TextDescription> */}
+
         </s.Container>
-        <s.SpacerLarge/>
-        <s.SpacerLarge/>
-        <s.SpacerLarge/>
+
       </s.Container>
- 
- 
-        
       <s.Container
         flex={1}
         ai={"left"}
-
         style={{backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/fullbg2.svg" : null}
-
       >
         
         <s.SpacerSmall />
@@ -510,7 +511,6 @@ function App() {
             }}
           >
   
-
           {/* <s.Container flex={1} jc={"center"} ai={"center"}>
             <StyledImg02
               alt={"example"}
@@ -519,7 +519,6 @@ function App() {
             />
           </s.Container> */}
           
-
           
           <s.SpacerLarge/>
 
@@ -635,7 +634,7 @@ function App() {
           <s.Container flex={1} flex={1} ai={"center"} style={{ }}>
             <StyledImg02 alt={"example"} src={"/config/images/roadmap1.svg"} 
               style={{
-              width:"40%",
+              width:"100%",
               float: "left"
             }}
             />
@@ -643,7 +642,7 @@ function App() {
 
             <StyledImg02 alt={"example"} src={"/config/images/roadmap2.svg"} 
               style={{
-              width:"40%",
+              width:"100%",
               float: "right",
               marginTop: "30px"
             }}
@@ -652,7 +651,7 @@ function App() {
      
             <StyledImg02 alt={"example"} src={"/config/images/roadmap3.svg"} 
               style={{
-              width:"40%",
+              width:"100%",
               marginTop: "30px",
               float: "left",
             }}
@@ -661,7 +660,7 @@ function App() {
 
             <StyledImg02 alt={"example"} src={"/config/images/roadmap4.svg"} 
               style={{
-              width:"40%",
+              width:"100%",
               marginTop: "30px",
               float: "left",
             }}
@@ -670,7 +669,7 @@ function App() {
 
             <StyledImg02 alt={"example"} src={"/config/images/roadmap5.svg"} 
               style={{
-              width:"40%",
+              width:"100%",
               marginTop: "30px",
               float: "left",
             }}
@@ -679,7 +678,7 @@ function App() {
 
             <StyledImg02 alt={"example"} src={"/config/images/roadmap6.svg"} 
               style={{
-              width:"40%",
+              width:"100%",
               marginTop: "30px",
               float: "left",
             }}
@@ -687,10 +686,28 @@ function App() {
             
           </s.Container>
 
-            <s.SpacerLarge/>
-            <s.SpacerLarge/>
+          <s.SpacerLarge/>
+          <s.SpacerLarge/>
             
-           
+          <s.Container flex={1} jc={"center"} ai={"center"}
+            style={{
+              lineHeight:"140%",
+              color: "white",
+              fontWeight: "600",
+              textAlign: "center"
+            }}>
+              Verified smart contract 
+                      <s.TextDescription
+                        style={{
+                          color: "var(--primary-text)",
+                          color: "white"
+                        }}
+                      >
+                        <StyledLink03 target={"_blank"} href={CONFIG.SCAN_LINK}>
+                          {truncate(CONFIG.CONTRACT_ADDRESS)}
+                        </StyledLink03>
+                      </s.TextDescription>       
+          </s.Container>
 
           <s.SpacerLarge/>
           <s.SpacerLarge/>
@@ -725,8 +742,6 @@ function App() {
         style={{backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/fullbg3.svg" : null}
       >
- 
-
        <s.SpacerLarge/>
        <s.SpacerLarge/>
         <s.Container flex={1} jc={"center"} ai={"center"}>
