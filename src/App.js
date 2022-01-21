@@ -307,7 +307,7 @@ function App() {
             >
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
-            {/* <s.TextDescription
+            <s.TextDescription
               style={{
                 textAlign: "center",
                 color: "var(--primary-text)",
@@ -317,7 +317,7 @@ function App() {
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
                 {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
               </StyledLink>
-            </s.TextDescription> */}
+            </s.TextDescription>
             <s.SpacerSmall />
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
@@ -467,7 +467,7 @@ function App() {
             }}
           >
             Please make sure you are connected to the right network (
-            {CONFIG.NETWORK.NAME} main net) and the correct address. Minting cannot be undone. 
+            {CONFIG.NETWORK.NAME} mainnet) and the correct address. Minting cannot be undone. 
           </s.TextDescription>
           <s.SpacerSmall />
           {/* <s.TextDescription
@@ -483,6 +483,11 @@ function App() {
             gas limit.
           </s.TextDescription> */}
 
+<s.SpacerLarge/>
+            <s.SpacerLarge/>
+            <s.SpacerLarge/>
+            <s.SpacerLarge/>
+
         </s.Container>
 
       </s.Container>
@@ -496,7 +501,7 @@ function App() {
         <s.SpacerSmall />
 
 
-        <ResponsiveWrapper flex={2} style={{ padding: 24 }} test>
+        <ResponsiveWrapper flex={2} style={{}} test>
           <s.Container flex={1} jc={"left"} ai={"left"}>
             
           </s.Container>
@@ -521,6 +526,13 @@ function App() {
           
           
           <s.SpacerLarge/>
+          <s.SpacerLarge/>
+
+          <StyledImg02
+              alt={"example"}
+              src={"/config/images/dogspecial.png"}
+              style={{ transform: "scaleX(1)",transform: "rotate(5deg)",width:"80px" }}
+            />
 
             <s.TextTitle
               style={{
@@ -545,7 +557,7 @@ function App() {
                 color: "white"
               }}
             >
-           10,000 Silly Dogs are waiting to be minted to find their home on the block chain. Each single SillyDog is a unique expression of affection for animals and pets around the world, especially dogs.  
+           10,000 Silly Dogs non-fungible tokens (NFT’s) are waiting to be minted and find their home on the blockchain! Every single SillyDog is a unique expression of affection for animals and pets around the world, especially dogs.  
             </s.Container>
  
             <s.SpacerSmall/>
@@ -556,12 +568,18 @@ function App() {
                 color: "white"
               }}
             >
-              Each dog has a selection of traits; from faces, hair, hats, and more — Silly Dogs are friends to accompany you through the metaverse. Holding a SillyDog enables you to participate in the community - enabling you to vote on charities, merchandise, and possibly events. The more silly dogs out there, the more help and awareness we can bring. 
+              Each dog has a selection of traits; from faces, hair, hats, and more — Silly Dogs are friends to accompany you through the metaverse. Holding a SillyDog enables you to participate in the community - enabling you to participatein selection of charities, merchandise, and possibly events. The more silly dogs out there, the more help and awareness we can bring. 
             </s.Container>
             <s.SpacerLarge/>
             <s.SpacerLarge/>
             <s.SpacerLarge/>
             <s.SpacerLarge/>
+
+            <StyledImg02
+              alt={"example"}
+              src={"/config/images/dogreveal.png"}
+              style={{ transform: "scaleX(1)",transform: "rotate(5deg)",width:"80px" }}
+            />
           
           <s.TextTitle
               style={{
@@ -589,11 +607,49 @@ function App() {
             >
             Silly Dogs will be revealed from their current storage on IPFS on [date], 12AM EST. There’s 2 different kinds of Silly Dogs to unlock right now, with some special editions. In this initial run, the Silly Dogs will be similar to some designs shown on this page. In future, one of the goals of Silly Dogs is to represent even more of our friends on the blockchain, in more ways, with improved artwork.
             </s.Container>
+
+            <s.Container
+              style={{
+                lineHeight:"140%",
+                color: "white"
+              }}
+            >
+              <s.SpacerMedium/>
+            Silly Dogs is being launched on Polygon as it affords an environmentally friendly approach to cryptocurrency, while being accessible, fast and low cost.
+            </s.Container>
+            <s.SpacerLarge/>
+            <s.Container flex={1} jc={"left"} ai={"left"}
+            style={{
+              lineHeight:"140%",
+              color: "white",
+              fontWeight: "600",
+              textAlign: "left"
+            }}>
+              Verified smart contract 
+                      <s.TextDescription
+                        style={{
+                          color: "var(--primary-text)",
+                          color: "white"
+                        }}
+                      >
+                        <StyledLink03 target={"_blank"} href={CONFIG.SCAN_LINK}>
+                          {truncate(CONFIG.CONTRACT_ADDRESS)}
+                        </StyledLink03>
+                      </s.TextDescription>       
+          </s.Container>
+
             
             <s.SpacerLarge/>
             <s.SpacerLarge/>
             <s.SpacerLarge/>
             <s.SpacerLarge/>
+
+
+            <StyledImg02
+              alt={"example"}
+              src={"/config/images/dogroadmap.png"}
+              style={{ transform: "scaleX(1)",transform: "rotate(5deg)",width:"80px" }}
+            />
           
           <s.TextTitle
               style={{
@@ -617,13 +673,13 @@ function App() {
             <s.Container
               style={{
                 lineHeight:"140%",
-                color: "white"
+                color: "white",
               }}>
-
-            Ultimately, Silly Dogs aims to find a way to leverage non-fungible tokens (NFT’s) to benefit animals. Be it through donating to charities, acting as a token of love for dogs, or a means to draw attention to our love of pets everywhere -- on the blockchain. Given the direciton of Silly Dogs, these steps aren't in a particular order and act as an indication of the goals of Silly Dogs. 
-
+            Ultimately, Silly Dogs aims to find a way to leverage NFT's to benefit animals. Be it through donating to charities, acting as a token of love for dogs, or a means to draw attention to our love of pets everywhere -- on the blockchain. Given the direciton of Silly Dogs, these steps aren't in a particular order and act as an indication of the goals of Silly Dogs. 
             </s.Container>
             <s.SpacerLarge/>
+
+            
               
 
               
@@ -689,26 +745,7 @@ function App() {
           <s.SpacerLarge/>
           <s.SpacerLarge/>
             
-          <s.Container flex={1} jc={"center"} ai={"center"}
-            style={{
-              lineHeight:"140%",
-              color: "white",
-              fontWeight: "600",
-              textAlign: "center"
-            }}>
-              Verified smart contract 
-                      <s.TextDescription
-                        style={{
-                          color: "var(--primary-text)",
-                          color: "white"
-                        }}
-                      >
-                        <StyledLink03 target={"_blank"} href={CONFIG.SCAN_LINK}>
-                          {truncate(CONFIG.CONTRACT_ADDRESS)}
-                        </StyledLink03>
-                      </s.TextDescription>       
-          </s.Container>
-
+          
           <s.SpacerLarge/>
           <s.SpacerLarge/>
           <s.SpacerLarge/>
@@ -773,9 +810,7 @@ function App() {
         <s.TextTitleFooter
               style={{
                 textAlign: "center",
-                fontSize: 16,
-                fontWeight: "bold",
-                // color: "white",
+                fontSize: "16px",
                 width:"100%",
                 lineHeight:"110%",
                 padding: "10%",
@@ -784,7 +819,7 @@ function App() {
             ><s.Container flex={1} jc={"center"} ai={"center"} style={{ }}>
             <StyledImg02
               alt={"example"}
-              src={"/config/images/sd_r_.gif"}
+              src={"/config/images/sleepingdog.gif"}
               style={{ transform: "scaleX(1)",transform: "rotate(0deg)" }}
             />
             <s.SpacerLarge/>
@@ -795,7 +830,7 @@ function App() {
             <StyledImg02 alt={"example"} src={"/config/images/heart.svg"} 
               style={{
               width:"5%",
-              marginTop: "30px",
+        
               marginBottom: "30px"
             }}
             /></s.Container>
